@@ -1,4 +1,3 @@
-
 //let vs const vs var examples
 
 //ES5
@@ -62,7 +61,6 @@ for (var i = 0; i < 5; i++) {
 }
 console.log(i); //5
 
-
 // Blocks and IIFEs
 
 //ES6
@@ -81,7 +79,6 @@ console.log(c); //3
 })();
 
 console.log(d); //d is not defined
-
 
 // Strings
 
@@ -118,7 +115,6 @@ console.log(n.startsWith("J"));
 console.log(n.endsWith("h"));
 console.log(n.includes(" "));
 console.log(`${firstName} `.repeat(5));
-
 
 //Arrow functions
 
@@ -183,8 +179,7 @@ const box66 = {
     });
   }
 };
-box66.clickMe(); this will point to the global object and return undefined
-
+box66.clickMe(); //this will point to the global object and return undefined
 
 function Person(name) {
   this.name = name;
@@ -228,7 +223,6 @@ const friends6 = ["Jean", "Marc"];
 const michel = new Person("Michel");
 michel.myFriends6(friends6);
 
-
 //Destructuring
 
 //ES5
@@ -259,7 +253,6 @@ function calcAgeRetirement(year) {
 }
 const [age, retirement] = calcAgeRetirement(1990);
 console.log(age, retirement);
-
 
 //Arrays
 const boxes = document.querySelectorAll(".box");
@@ -310,7 +303,6 @@ console.log(ages[full.indexOf(true)]);
 console.log(ages.findIndex(cur => cur >= 18));
 console.log(ages.find(cur => cur >= 18));
 
-
 // Spread Operator
 
 function addFourAges(a, b, c, d) {
@@ -339,7 +331,6 @@ const boxes = document.querySelectorAll(".box");
 const all = [h, ...boxes];
 
 Array.from(all).forEach(cur => (cur.style.color = "purple"));
-
 
 //Function parameters
 
@@ -379,7 +370,6 @@ function isFullAge6(limit, ...years) {
 }
 isFullAge6(16, 1990, 1999, 1965, 2016, 1987);
 
-
 //Default parameters
 
 //ES5
@@ -408,7 +398,6 @@ function SmithPerson(
 
 var john = new SmithPerson("John", 1990);
 var emily = new SmithPerson("Emily", 1983, "Diaz", "spanish");
-
 
 //Maps ES6
 const question = new Map();
@@ -445,7 +434,6 @@ for (let [key, value] of question.entries()) {
 
 const ans = parseInt(prompt("Write the correct answer"));
 console.log(question.get(ans === question.get("correct")));
-
 
 // Classes and SubClasses
 
