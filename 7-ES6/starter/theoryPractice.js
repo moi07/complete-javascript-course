@@ -1,5 +1,5 @@
-/*
-//let vs const vs var
+
+//let vs const vs var examples
 
 //ES5
 var name5 = "Jane Smith";
@@ -513,4 +513,3 @@ class Athlete6 extends Person6 {
 const johnAthlete6 = new Athlete6("John", 1990, "footballer", 2, 7);
 johnAthlete6.calculateAge();
 johnAthlete6.wonMedal();
-*/
